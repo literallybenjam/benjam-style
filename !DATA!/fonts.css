@@ -20,10 +20,6 @@
     font-synthesis: none;
 }
 
-*:root *:not(html) {
-    font-family: inherit;
-}
-
 /*  PAGE LAYOUT  */
 
 /*  SECTIONING  */
