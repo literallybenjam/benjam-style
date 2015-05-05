@@ -4,6 +4,13 @@
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic&subset=latin,latin-ext);
 
+@font-face {
+    font-family: "M+ 1mn";
+    font-weight: 100;
+    font-style: normal;
+    src: url("/!DATA!/fonts/mplus-1mn-thin.woff") format("woff"), url("/!DATA!/fonts/mplus-1mn-thin.ttf") format("truetype");
+}
+
 /*  GLOBAL RULES  */
 
 *:root {
@@ -66,6 +73,7 @@ h2 {
 }
 
 pre {
+    font-family: "M+ 1mn", monospace;
     font-size: .96rem;
     font-weight: 100;
 }
@@ -75,6 +83,11 @@ pre {
 b, cite, dfn, em, strong {
     font-style: inherit;
     font-weight: 400;
+}
+
+code {
+    font-family: "M+ 1mn", monospace;
+    font-weight: 100;
 }
 
 i {

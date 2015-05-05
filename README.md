@@ -1,3 +1,3 @@
 # BENJAM STYLE #
 
-A slightly quirky CSS theme for websites
+Core styling in CSS for websites. Uses Lato (via Google Fonts) and M+ 1mn.
