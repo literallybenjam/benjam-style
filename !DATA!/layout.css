@@ -72,6 +72,14 @@ footer, header, main, nav, section {
     padding: 0;
 }
 
+footer {
+    margin: 0 0 1.2rem;
+}
+
+header {
+    margin: 1.2rem 0 0;
+}
+
 /*  TABLES  */
 
 caption {
@@ -187,9 +195,8 @@ figcaption {
 }
 
 h1 {
-    margin: 0 0 1.2rem;
+    margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 h2 {
