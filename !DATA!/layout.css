@@ -4,14 +4,14 @@
 
 /*  GLOBAL RULES  */
 
-*[data-float^="clear"] {
+*[data-benjam-float^="clear"] {
     clear: both;
 }
-*[data-float="left"], *[data-float="clear-left"] {
+*[data-benjam-float="left"], *[data-benjam-float="clear-left"] {
     float: left;
     margin: 0 1rem 0 0;
 }
-*[data-float="right"], *[data-float="clear-right"] {
+*[data-benjam-float="right"], *[data-benjam-float="clear-right"] {
     float: right;
     margin: 0 0 0 1rem;
 }
