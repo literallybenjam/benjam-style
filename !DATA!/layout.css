@@ -50,7 +50,8 @@ body {
     margin: 0 auto;
     padding: 1.2rem 1rem;
     max-width: 36rem;
-    min-height: 100vw;
+    min-height: 100vh;
+    min-height: calc(100vh - 2.4rem);
 }
 
 /*  SECTIONING  */
