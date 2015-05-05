@@ -41,12 +41,16 @@ html {
 }
 
 body {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-direction: column;
     flex-direction: column;
     justify-content: center;
+    -webkit-justify-content: center;
     margin: 0 auto;
     padding: 1.2rem 1rem;
     max-width: 36rem;
+    min-height: 100vw;
 }
 
 /*  SECTIONING  */
