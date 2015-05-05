@@ -8,7 +8,7 @@
     font-family: "M+ 1mn";
     font-weight: 100;
     font-style: normal;
-    src: url("/!DATA!/fonts/mplus-1mn-thin.woff") format("woff"), url("/!DATA!/fonts/mplus-1mn-thin.ttf") format("truetype");
+    src: url("!DATA!/fonts/mplus-1mn-thin.woff") format("woff"), url("!DATA!/fonts/mplus-1mn-thin.ttf") format("truetype");
 }
 
 /*  GLOBAL RULES  */
