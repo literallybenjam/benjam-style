@@ -163,6 +163,10 @@ a[href] {
     cursor: vertical-text;
 }
 
+h1 a[href], nav a[href] {
+    text-decoration: none;
+}
+
 code::before, code::after {
     content: "'";
 }
