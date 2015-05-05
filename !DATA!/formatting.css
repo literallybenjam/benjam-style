@@ -136,6 +136,10 @@ h1 {
     text-overflow: ellipsis;
 }
 
+h2 {
+    letter-spacing: .5rem;
+}
+
 h2::after {
     content: ":";
 }
