@@ -110,10 +110,6 @@ ul, ol, dl {
     padding: 0 0 0 2rem;
 }
 
-aside ul, aside ol, aside dl, div ul, div ol, div dl, header ul, header ol, header dl, nav ul, nav ol, nav dl {
-    padding: 0;
-}
-
 td > dl:only-child, th > dl:only-child {
     padding: 0;
 }
