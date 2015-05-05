@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+/*  @RULES  */
+
+/*  GLOBAL RULES  */
+
+*[title]:not([title=""]):not(a) {
+    cursor: help;
+}
+
+@supports (text-decoration-style: dotted) {
+    *[title]:not([title=""]):not(a) {
+        text-decoration-line: underline;
+        text-decoration-style: dotted;
+    }
+}
+
+*:root {
+    cursor: text;
+}
+
+/*  PAGE LAYOUT  */
+
+html {
+    line-height: 1.2;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+/*  SECTIONING  */
+
+aside, div, header, nav {
+    text-align: center;
+}
+
+/*  TABLES  */
+
+tbody + tbody::before {
+    content: "";
+}
+
+th {
+    text-decoration: underline;
+}
+
+/*  LISTS  */
+
+ul, ol, dl {
+    text-align: left;
+    -moz-text-align-last: auto;
+    text-align-last: auto;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+nav ul, nav li ul, nav li li ul, nav li li li ul, nav li li li li ul {
+    list-style-type: none;
+}
+
+li ul {
+    list-style-type: square;
+}
+
+li li ul {
+    list-style-type: disc;
+}
+
+li li li ul {
+    list-style-type: circle;
+}
+
+li li li li ul {
+    list-style-type: square;
+}
+
+ol, nav li ol {
+    list-style-type: upper-roman;
+}
+
+li ol, nav ol {
+    list-style-type: decimal-leading-zero;
+}
+
+li li ol {
+    list-style-type: lower-latin;
+}
+
+li li li ol {
+    list-style-type: lower-greek;
+}
+
+li li li li ol {
+    list-style-type: decimal;
+}
+
+dt + dt::before {
+    content: ", "
+}
+
+dd::before {
+    white-space: pre-wrap;
+    content: " : ";
+}
+
+dd + dd::before {
+    content: "″ : ";
+}
+
+dd::after {
+    content: "";
+}
+
+/*  BLOCK ELEMENTS  */
+
+blockquote::before {
+    text-align: center;
+    content: open-quote;
+}
+
+blockquote::after {
+    text-align: center;
+    content: close-quote;
+}
+
+figcaption {
+    text-align: right;
+    -moz-text-align-last: auto;
+    text-align-last: auto;
+}
+
+h1 {
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+h2::after {
+    content: ":";
+}
+
+dd p {
+    text-indent: 2rem;
+}
+
+pre {
+    line-height: 1;
+}
+
+/*  PHRASING  */
+
+a[href] {
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    cursor: vertical-text;
+}
+
+code {
+    white-space: pre;
+}
+
+code::before, code::after {
+    content: "'";
+}
+
+del {
+    text-decoration: line-through;
+    text-decoration-style: double;
+}
+
+em {
+    white-space: nowrap;
+}
+
+em::before, em::after {
+    content: "･";
+}
+
+i::before {
+    content: "'";
+}
+
+i::after {
+    content: "'";
+}
+
+ins {
+    text-decoration: underline;
+}
+
+s {
+    text-decoration: line-through;
+    text-decoration-style: single;
+}
+
+small {
+    line-height: inherit;
+}
+
+strong {
+    text-decoration: underline;
+}
+
+sub, sup {
+    line-height: 1;
+}
+
+sup {
+    text-transform: uppercase;
+}
+
+u {
+    text-decoration: none;
+    text-transform: uppercase;
+}

@@ -1,0 +1,294 @@
+@charset "UTF-8";
+
+/*  @RULES  */
+
+/*  GLOBAL RULES  */
+
+*[data-float^="clear"] {
+    clear: both;
+}
+*[data-float="left"], *[data-float="clear-left"] {
+    float: left;
+    margin: 0 1rem 0 0;
+}
+*[data-float="right"], *[data-float="clear-right"] {
+    float: right;
+    margin: 0 0 0 1rem;
+}
+
+*[title]:not([title=""]):not(a) {
+    border-bottom: dotted currentColor black;
+}
+
+@supports (text-decoration-style: dotted) {
+    *[title]:not([title=""]):not(a) {
+        border: none;
+    }
+}
+
+figure > *:first-child {
+    margin-top: 0;
+}
+figure > *:last-child {
+    margin-bottom: 0;
+}
+
+/*  PAGE LAYOUT  */
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    padding: 1.2rem 1rem;
+    max-width: 36rem;
+}
+
+/*  SECTIONING  */
+
+aside, div {
+    display: block;
+    margin: 1.2rem 0;
+    padding: 0;
+}
+
+aside {
+    margin: 1.2rem 1rem;
+}
+
+footer, header, main, nav, section {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    margin: 1.2rem 0 0;
+}
+
+header {
+    margin: 0 0 1.2rem;
+}
+
+/*  TABLES  */
+
+caption {
+    margin: 0;
+    padding: .3rem .25rem;
+}
+
+table {
+    margin: 1.2rem auto;
+    border-collapse: separate;
+    border-spacing: .125rem .15rem;
+    padding: 0;
+}
+
+tbody + tbody::before {
+    display: table-row;
+    height: 1.2rem;
+}
+
+td > table:only-child {
+    margin: auto;
+    width: 100%;
+}
+
+td, th {
+    border: none;
+    border-radius: .125rem;
+    padding: .15rem .125rem;
+    vertical-align: top;
+}
+
+/*  LISTS  */
+
+ul, ol, dl {
+    margin: 0;
+    padding: 0 0 0 2rem;
+}
+
+aside ul, aside ol, aside dl, div ul, div ol, div dl, header ul, header ol, header dl, nav ul, nav ol, nav dl {
+    padding: 0;
+}
+
+td > dl:only-child, th > dl:only-child {
+    padding: 0;
+}
+
+dt {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+dd {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+dd + dd::before {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 100%;
+}
+
+dd:after {
+    display: block;
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+/*  BLOCK ELEMENTS  */
+
+blockquote {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+blockquote::before {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 2rem;
+    height: 2.4rem;
+}
+
+blockquote::after {
+    display: block;
+    position: absolute;
+    bottom: -1.2rem;
+    right: 0;
+}
+
+figure, iframe, svg, video, pre {
+    display: block;
+    margin: 1.2rem auto;
+    border: none;
+    padding: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 100%;
+    overflow: auto;
+}
+
+figcaption {
+    display: block;
+    margin: .6rem 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+h2 {
+    margin: 1.2rem 0;
+}
+
+hr {
+    margin: 1.2rem auto;
+    margin: calc(1.2rem - .5px) auto;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 0;
+    width: calc(100% - 2rem);
+    height: 0;
+}
+
+iframe[src="/!DATA!/frames/menu.html"] {
+    width: 100%;
+    height: 1.2rem;
+    overflow: visible;
+}
+
+@media print {
+    iframe[src^="/!DATA!/frames/menu.html"] {
+        display: none;
+    }
+}
+
+img {
+    display: inline-block;
+    margin: .6rem .5rem;
+    padding: 0;
+    width: 6rem;
+    height: auto;
+}
+
+blockquote img, dt img, dd img, figcaption img, li img, nav img, p img, pre img {
+    display: inline-block;
+    margin: 0;
+    padding: 0 .1rem;
+    width: .8rem;
+    max-height: .8rem;
+    vertical-align: middle;
+}
+
+figure > img {
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 100%;
+}
+
+td > img:only-of-type, th > img:only-of-type {
+    display: block;
+    margin: auto;
+}
+
+p {
+    margin: 1.2rem 0;
+    padding: 0;
+}
+
+dd p {
+    margin: 0;
+}
+
+dd p:last-child {
+    margin-bottom: 1.2rem;
+}
+
+header p {
+    margin: 0;
+}
+
+pre {
+    padding: 1rem;
+    max-width: calc(100% - 2rem);
+}
+
+/*  PHRASING  */
+
+a[href] {
+    transition: color .5s, background-color .5s;
+}
+
+@supports (text-decoration-style: dotted) {
+    abbr {
+        border: none;
+    }
+}
+
+sub {
+    vertical-align: baseline;
+}
+
+sup {
+    vertical-align: super;
+}

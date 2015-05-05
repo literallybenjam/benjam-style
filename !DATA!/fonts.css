@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+/*  @RULES  */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic&subset=latin,latin-ext);
+
+/*  GLOBAL RULES  */
+
+*:root {
+    font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
+    font-size: 15pt;
+    font-weight: 300;
+    font-synthesis: none;
+}
+
+*:root *:not(html) {
+    font-family: inherit;
+}
+
+/*  PAGE LAYOUT  */
+
+/*  SECTIONING  */
+
+aside, header {
+    font-weight: 100;
+}
+
+/*  TABLES  */
+
+caption, th {
+    font-weight: 400;
+}
+
+tfoot {
+    font-weight: 100;
+}
+
+/*  LISTS  */
+
+dt {
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/*  BLOCK ELEMENTS  */
+
+blockquote::before, blockquote::after {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+figcaption {
+    font-size: .8rem;
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+pre {
+    font-size: .96rem;
+    font-weight: 100;
+}
+
+/*  PHRASING  */
+
+b, cite, dfn, em, strong {
+    font-style: inherit;
+    font-weight: 400;
+}
+
+i {
+    font-style: italic;
+}
+
+small {
+    font-size: inherit;
+    font-weight: 100;
+}
+
+sub, sup {
+    font-size: .4em;
+}
