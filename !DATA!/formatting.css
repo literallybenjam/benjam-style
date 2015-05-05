@@ -145,6 +145,8 @@ dd p {
 }
 
 pre {
+    text-align: left;
+    text-align-last: auto;
     line-height: 1;
 }
 
