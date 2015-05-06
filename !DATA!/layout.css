@@ -251,19 +251,11 @@ td > img:only-of-type, th > img:only-of-type {
 }
 
 p {
-    margin: 1.2rem 0;
+    margin: 0 0 1.2rem;
     padding: 0;
 }
 
-dd > p {
-    margin: 0;
-}
-
-dd > p:last-child {
-    margin-bottom: 1.2rem;
-}
-
-header p {
+dd > p:not(:last-child) {
     margin: 0;
 }
 
