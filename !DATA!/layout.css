@@ -217,6 +217,11 @@ hr {
     height: 0;
 }
 
+iframe[src*="//youtube.com/embed/"], iframe[src*="//www.youtube.com/embed/"] {
+    width: 560px;
+    height: 315px;
+}
+
 img {
     display: inline-block;
     margin: .6rem .5rem;
