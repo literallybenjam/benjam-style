@@ -256,11 +256,11 @@ p {
     padding: 0;
 }
 
-dd p {
+dd > p {
     margin: 0;
 }
 
-dd p:last-child {
+dd > p:last-child {
     margin-bottom: 1.2rem;
 }
 

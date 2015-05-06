@@ -144,7 +144,7 @@ h3::after {
     content: ":";
 }
 
-dd p {
+dd > p {
     text-indent: 2rem;
 }
 
