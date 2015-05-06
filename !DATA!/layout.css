@@ -217,18 +217,6 @@ hr {
     height: 0;
 }
 
-iframe[src="/!DATA!/frames/menu.html"] {
-    width: 100%;
-    height: 1.2rem;
-    overflow: visible;
-}
-
-@media print {
-    iframe[src^="/!DATA!/frames/menu.html"] {
-        display: none;
-    }
-}
-
 img {
     display: inline-block;
     margin: .6rem .5rem;
