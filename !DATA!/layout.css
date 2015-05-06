@@ -16,6 +16,10 @@
     margin: 0 0 0 1rem;
 }
 
+*:root *[hidden] {
+    display: none;
+}
+
 *[title]:not([title=""]):not(a) {
     border-bottom: dotted currentColor black;
 }
