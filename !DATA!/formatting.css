@@ -34,6 +34,16 @@ aside, div, header, nav {
     text-align: center;
 }
 
+footer {
+    text-align: right;
+    -moz-text-align-last: auto;
+    text-align-last: auto;
+}
+
+blockquote > footer::before {
+    content: "– ";
+}
+
 /*  TABLES  */
 
 tbody + tbody::before {
