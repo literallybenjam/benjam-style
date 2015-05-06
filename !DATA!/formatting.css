@@ -115,6 +115,12 @@ dd::after {
 
 /*  BLOCK ELEMENTS  */
 
+blockquote {
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
 blockquote::before {
     text-align: center;
     content: open-quote;
