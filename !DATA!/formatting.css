@@ -140,7 +140,7 @@ h2 {
     letter-spacing: .25rem;
 }
 
-h2::after {
+h3::after {
     content: ":";
 }
 

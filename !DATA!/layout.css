@@ -200,6 +200,13 @@ h2 {
     margin: 1.2rem 0;
 }
 
+h3 {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
 hr {
     margin: 1.2rem auto;
     margin: calc(1.2rem - .5px) auto;
