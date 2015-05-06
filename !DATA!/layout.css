@@ -30,13 +30,6 @@
     }
 }
 
-figure > *:first-child {
-    margin-top: 0;
-}
-figure > *:last-child {
-    margin-bottom: 0;
-}
-
 /*  PAGE LAYOUT  */
 
 html {
@@ -182,7 +175,7 @@ blockquote::after {
 
 figure, iframe, svg, video, pre {
     display: block;
-    margin: 1.2rem auto;
+    margin: auto;
     border: none;
     padding: 0;
     width: -webkit-fit-content;
