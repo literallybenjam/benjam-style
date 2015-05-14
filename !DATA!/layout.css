@@ -84,12 +84,12 @@ header[data-benjam-full] {
     justify-content: center;
     width: 100%;
     height: calc(100vh - 2.4rem);
+    overflow: auto;
 }
 
 header[data-benjam-full]::before {
     flex-shrink: 1;
-    height: 67%;
-    height: calc(200% / 3);
+    height: 25%;
 }
 
 /*  TABLES  */
@@ -286,6 +286,10 @@ dd > p:not(:last-child) {
 
 header p {
     margin: 0;
+}
+
+header[data-benjam-full] p {
+    margin: 1.2rem 0;
 }
 
 pre {
