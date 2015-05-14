@@ -48,8 +48,8 @@ body {
     flex-direction: column;
     -webkit-justify-content: center;
     justify-content: center;
-    margin: 0 auto;
-    padding: 1.2rem 1rem;
+    margin: 1.2rem auto;
+    padding: 0 1rem;
     max-width: 36rem;
     min-height: 100vh;
     min-height: calc(100vh - 2.4rem);
@@ -75,18 +75,21 @@ header {
     margin: 0 0 1.2rem;
 }
 
-header[data-benjam-full] {
+header[data-benjam-full], section[data-benjam-full] {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
     -webkit-justify-content: center;
     justify-content: center;
-    margin: -1.2rem calc(50% - 50vw);
-    padding: 1.2rem calc(50vw - 50%);
-    width: 100%;
-    height: calc(100vh - 2.4rem);
     overflow: auto;
+}
+
+header[data-benjam-full] {
+    margin: -1.2rem calc(50% - 50vw) 0;
+    padding: 0 calc(50vw - 50%);
+    width: 100%;
+    height: 100vh;
 }
 
 header[data-benjam-full]::before {
@@ -94,9 +97,11 @@ header[data-benjam-full]::before {
     height: 25%;
 }
 
-section {
+section[data-benjam-full] {
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
+    width: 100%;
+    min-height: 100vh;
 }
 
 /*  TABLES  */
