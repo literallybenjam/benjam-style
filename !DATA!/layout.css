@@ -30,12 +30,8 @@
     }
 }
 
-header[data-benjam-full] *:first-child {
-    margin-top: auto;
-}
-
-header[data-benjam-full] *:last-child {
-    margin-bottom: auto;
+header[data-benjam-full] * {
+    flex-shrink: 0;
 }
 
 /*  PAGE LAYOUT  */
@@ -50,8 +46,8 @@ body {
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
-    justify-content: center;
     -webkit-justify-content: center;
+    justify-content: center;
     margin: 0 auto;
     padding: 1.2rem 1rem;
     max-width: 36rem;
@@ -84,14 +80,16 @@ header[data-benjam-full] {
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
-    justify-content: space-around;
-    -webkit-justify-content: space-around;
+    -webkit-justify-content: center;
+    justify-content: center;
     width: 100%;
     height: calc(100vh - 2.4rem);
 }
 
-header[data-benjam-full] nav {
-    margin: auto 0;
+header[data-benjam-full]::before {
+    flex-shrink: 1;
+    height: 67%;
+    height: calc(200% / 3);
 }
 
 /*  TABLES  */
@@ -223,10 +221,6 @@ h1 {
     padding: 0;
 }
 
-header[data-benjam-full] h1 {
-    margin: auto 0 0;
-}
-
 h2 {
     margin: 1.2rem 0;
     padding: 0;
@@ -284,10 +278,6 @@ td > img:only-of-type, th > img:only-of-type {
 p {
     margin: 0 0 1.2rem;
     padding: 0;
-}
-
-header[data-benjam-full] p {
-    margin: 1.2rem 0;
 }
 
 dd > p:not(:last-child) {
