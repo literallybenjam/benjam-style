@@ -71,6 +71,21 @@ header {
     margin: 0 0 1.2rem;
 }
 
+header[data-benjam-full] {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    width: 100%;
+    height: calc(100vh - 2.4rem);
+}
+
+header[data-benjam-full] > nav {
+    margin-top: auto;
+}
+
 /*  TABLES  */
 
 caption {
@@ -107,6 +122,16 @@ td, th {
 ul, ol, dl {
     margin: 0;
     padding: 0 0 0 2rem;
+}
+
+
+header[data-benjam-full] > nav ul, header[data-benjam-full] > nav ol {
+    counter-reset: benjam-list-counter;
+}
+
+header[data-benjam-full] > nav li {
+    display: inline;
+    counter-increment: benjam-list-counter;
 }
 
 td > dl:only-child, th > dl:only-child {
@@ -250,6 +275,10 @@ p {
 }
 
 dd > p:not(:last-child) {
+    margin: 0;
+}
+
+header p {
     margin: 0;
 }
 

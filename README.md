@@ -11,6 +11,7 @@ BENJAM STYLE is aimed primarily at styling content, and not at determining layou
     * `right` positions the element to the right
     * `clear` makes the element clear any previous floating content
     * `clear-left` and `clear-right` combine the functionality of the above
-4. By default, `<div>`s centre text.
+4. You can use the `data-benjam-full` attribute on header elements for a larger header.
+5. By default, `<div>`s centre text.
 
 You should include BENJAM STYLE before any layout-intensive stylesheets to ensure that the proper rules are overrided.
