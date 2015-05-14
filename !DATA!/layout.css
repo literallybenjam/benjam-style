@@ -76,8 +76,8 @@ header[data-benjam-full] {
     display: flex;
     -webkit-flex-direction: column;
     flex-direction: column;
-    justify-content: center;
-    -webkit-justify-content: center;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
     width: 100%;
     height: calc(100vh - 2.4rem);
 }
