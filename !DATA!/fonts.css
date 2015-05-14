@@ -24,7 +24,7 @@
 
 /*  SECTIONING  */
 
-aside, header {
+aside, header:not([data-benjam-full]) {
     font-weight: 100;
 }
 
@@ -59,6 +59,10 @@ figcaption {
 h1 {
     font-size: 2rem;
     font-weight: 100;
+}
+
+header[data-benjam-full] h1 {
+    font-size: 6rem;
 }
 
 h2 {

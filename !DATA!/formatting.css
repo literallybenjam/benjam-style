@@ -106,13 +106,15 @@ li li li li ol {
     list-style-type: decimal;
 }
 
-header[data-benjam-full] > nav ol li::before {
+header[data-benjam-full] > nav li:not(:first-child)::before {
     margin-left: 1rem;
+}
+
+header[data-benjam-full] > nav ol li::before {
     content: counters(benjam-list-counter, ".", decimal-leading-zero) ". ";
 }
 
 header[data-benjam-full] > nav ul li::before {
-    margin-left: 1rem;
     content: "- ";
 }
 
