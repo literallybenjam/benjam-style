@@ -106,8 +106,14 @@ li li li li ol {
     list-style-type: decimal;
 }
 
-header[data-benjam-full] > nav li::before {
-    content: " " counters(benjam-list-counter, ".", decimal-leading-zero) ". ";
+header[data-benjam-full] > nav ol li::before {
+    margin-left: 1rem;
+    content: counters(benjam-list-counter, ".", decimal-leading-zero) ". ";
+}
+
+header[data-benjam-full] > nav ul li::before {
+    margin-left: 1rem;
+    content: "- ";
 }
 
 dt + dt::before {
