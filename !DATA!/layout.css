@@ -82,7 +82,9 @@ header[data-benjam-full] {
     flex-direction: column;
     -webkit-justify-content: center;
     justify-content: center;
-    width: 100%;
+    margin: -1.2rem calc(50% - 50vw) 0 0;
+    padding: 1.2rem calc(50vw - 50%);
+    width: 100vw;
     height: calc(100vh - 2.4rem);
     overflow: auto;
 }
