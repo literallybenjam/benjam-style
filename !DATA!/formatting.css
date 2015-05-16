@@ -61,7 +61,7 @@ th {
 /*  LISTS  */
 
 ul, ol, dl {
-    text-align: justify;
+    text-align: left;
     -moz-text-align-last: auto;
     text-align-last: auto;
 }
