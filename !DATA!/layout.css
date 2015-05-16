@@ -216,7 +216,6 @@ figure, iframe, svg, video, pre {
     width: -moz-fit-content;
     width: fit-content;
     max-width: 100%;
-    overflow-x: auto;
 }
 
 figcaption {
