@@ -98,11 +98,6 @@ section[data-benjam-full] {
     margin: 0 calc(50% - 50vw);
     padding: 0 calc(50vw - 50%);
     width: 100%;
-}
-
-section[data-benjam-full]::before, section[data-benjam-full]::after {
-    width: 100%;
-    height: 0;
     overflow: auto;
 }
 
@@ -221,7 +216,7 @@ figure, iframe, svg, video, pre {
     width: -moz-fit-content;
     width: fit-content;
     max-width: 100%;
-    overflow: auto;
+    overflow-x: auto;
 }
 
 figcaption {
