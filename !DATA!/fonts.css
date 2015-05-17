@@ -88,9 +88,14 @@ pre {
 
 /*  PHRASING  */
 
-b, cite, dfn, em, strong {
+b, dfn, em, strong {
     font-style: inherit;
     font-weight: 400;
+}
+
+cite {
+    font-style: inherit;
+    font-weight: inherit;
 }
 
 code {
