@@ -46,8 +46,13 @@ dt {
 
 /*  BLOCK ELEMENTS  */
 
+blockquote {
+    font-style: italic;
+}
+
 blockquote::before, blockquote::after {
     font-size: 2rem;
+    font-style: normal;
     font-weight: 400;
 }
 
