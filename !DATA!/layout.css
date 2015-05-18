@@ -75,6 +75,7 @@ div[data-benjam-full] {
     bottom: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
     z-index: -1;
 }
 
