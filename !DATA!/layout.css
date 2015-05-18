@@ -61,7 +61,34 @@ aside {
     margin: 1.2rem 1rem;
 }
 
+div[data-benjam-full] {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+div[data-benjam-full]::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 footer, header, main, nav, section, div {
+    position: relative;
     display: block;
     margin: 0;
     padding: 0;
@@ -269,6 +296,13 @@ blockquote img, dt img, dd img, figcaption img, li img, nav img, p img, pre img 
     width: .8rem;
     max-height: .8rem;
     vertical-align: middle;
+}
+
+div[data-benjam-full] iframe, div[data-benjam-full] img, div[data-benjam-full] video {
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
 }
 
 figure > img {

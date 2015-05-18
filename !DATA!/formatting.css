@@ -44,7 +44,7 @@ blockquote > footer::before {
     content: "– ";
 }
 
-header[data-benjam-full]::before {
+div[data-benjam-full]::after, header[data-benjam-full]::before, section[data-benjam-full]::before, section[data-benjam-full]::before {
     content: "";
 }
 
