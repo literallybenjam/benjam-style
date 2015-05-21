@@ -4,6 +4,10 @@
 
 /*  GLOBAL RULES  */
 
+*[data-benjam-full]::before, *[data-benjam-background]::after {
+    content: "";
+}
+
 *[title]:not([title=""]):not(a) {
     cursor: help;
 }
@@ -42,10 +46,6 @@ footer {
 
 blockquote > footer::before {
     content: "– ";
-}
-
-div[data-benjam-full]::after, header[data-benjam-full]::before, section[data-benjam-full]::before, section[data-benjam-full]::before {
-    content: "";
 }
 
 /*  TABLES  */

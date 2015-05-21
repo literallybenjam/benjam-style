@@ -11,7 +11,8 @@ BENJAM STYLE is aimed primarily at styling content, and not at determining layou
     * `right` positions the element to the right
     * `clear` makes the element clear any previous floating content
     * `clear-left` and `clear-right` combine the functionality of the above
-4. You can use the `data-benjam-full` attribute on `<header>`, and `<section>` elements for full-sized headers and sections. Using `data-benjam-full` on a `<div>` makes it fill the background; you can use this in conjunction with `<video>` or `<img>` for background content.
+4. You can use the `data-benjam-full` attribute on any element to make it fill the screen.
+5. You can use the `data-benjam-background` attribute on any element to make it fill the background; try using this on a `<div>` with `<video>` or `<img>` descendants.
 5. By default, `<div>`s centre text.
 
 You should include BENJAM STYLE before any layout-intensive stylesheets to ensure that the proper rules are overrided.
