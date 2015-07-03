@@ -14,10 +14,6 @@ footer {
     text-align-last: auto;
 }
 
-blockquote > footer {
-    margin: 0;
-}
-
 blockquote > footer::before {
     content: "– ";
 }
