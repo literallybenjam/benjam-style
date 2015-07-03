@@ -9,6 +9,7 @@ article, aside, nav, section {
 
 footer {
     margin: 1.2rem 0 0;
+    font-size: .8rem;
     text-align: right;
     -moz-text-align-last: auto;
     text-align-last: auto;
