@@ -36,7 +36,3 @@ h3, h1 ~ * h1 ~ h2, header ~ * h1 ~ h2, h1 ~ * header ~ h2, header ~ * header ~ 
     text-decoration: underline;
     letter-spacing: normal;
 }
-
-h3::after, h1 ~ * h1 ~ h2::after, header ~ * h1 ~ h2::after, h1 ~ * header ~ h2::after, header ~ * header ~ h2::after, h2 ~ * h1::after, h2 ~ * h2::after, h1 ~ * h1 ~ * h1::after, h1 ~ * h1 ~ * h2::after, header ~ * h1 ~ * h1::after, h1 ~ * header ~ * h2::after, header ~ * header ~ * h1::after {
-    content: " : ";
-}
