@@ -14,7 +14,7 @@ h1 {
     letter-spacing: normal;
 }
 
-h2, h1 ~ * h1 {
+h2, h1 ~ * h1, header ~ * h1 {
     margin: 1.2rem 0;
     padding: 0;
     font-size: 2rem;
@@ -25,7 +25,7 @@ h2, h1 ~ * h1 {
     letter-spacing: .25rem;
 }
 
-h3, h2 ~ * h1, h2 ~ * h2, h1 ~ * h1 ~ * h1, h1 ~ * h1 ~ * h2 {
+h3, h2 ~ * h1, h2 ~ * h2, h1 ~ * h1 ~ * h1, h1 ~ * h1 ~ * h2, header ~ * h1 ~ * h1, h1 ~ * header ~ * h2, header ~ * header ~ * h1 {
     margin: 1.2rem 0 0;
     padding: 0;
     font-size: 1rem;
@@ -37,11 +37,11 @@ h3, h2 ~ * h1, h2 ~ * h2, h1 ~ * h1 ~ * h1, h1 ~ * h1 ~ * h2 {
     letter-spacing: normal;
 }
 
-h3::after, h2 ~ * h1::after, h2 ~ * h2::after, h1 ~ * h1 ~ * h1::after, h1 ~ * h1 ~ * h2::after {
+h3::after, h2 ~ * h1::after, h2 ~ * h2::after, h1 ~ * h1 ~ * h1::after, h1 ~ * h1 ~ * h2::after, header ~ * h1 ~ * h1::after, h1 ~ * header ~ * h2::after, header ~ * header ~ * h1::after {
     content: " : ";
 }
 
-h4, h5, h6, h3 ~ * h1, h3 ~ * h2, h3 ~ * h3, h2 ~ * h1 ~ * h1, h2 ~ * h2 ~ * h1, h2 ~ * h1 ~ * h2, h2 ~ * h2 ~ * h2, h2 ~ * h1 ~ * h3, h2 ~ * h2 ~ * h3, h1 ~ * h1 ~ * h1 ~ * h1, h1 ~ * h1 ~ * h2 ~ * h1, h1 ~ * h1 ~ * h3 ~ * h1, h1 ~ * h1 ~ * h1 ~ * h2, h1 ~ * h1 ~ * h1 ~ * h3 {
+h4, h5, h6, h3 ~ * h1, h3 ~ * h2, h3 ~ * h3, h2 ~ * h1 ~ * h1, h2 ~ * header ~ * h1, h2 ~ * h2 ~ * h1, h2 ~ * h1 ~ * h2, h2 ~ * header ~ * h2, h2 ~ * h2 ~ * h2, h2 ~ * h1 ~ * h3, h2 ~ * header ~ * h3, h2 ~ * h2 ~ * h3, h1 ~ * h1 ~ * h1 ~ * h1, h1 ~ * h1 ~ * h2 ~ * h1, h1 ~ * h1 ~ * h3 ~ * h1, h1 ~ * h1 ~ * h1 ~ * h2, h1 ~ * h1 ~ * h1 ~ * h3, header ~ * h1 ~ * h1 ~ * h1, h1 ~ * header ~ * h1 ~ * h1, h1 ~ * h1 ~ * header ~ * h1, header ~ * header ~ * h1 ~ * h1, header ~ * h1 ~ * header ~ * h1, h1 ~ * header ~ * header ~ * h1, header ~ * header ~ * header ~ * h1, header ~ * h1 ~ * h2 ~ * h1, h1 ~ * header ~ * h2 ~ * h1, header ~ * header ~ * h2 ~ * h1, header ~ * h1 ~ * h3 ~ * h1, h1 ~ * header ~ * h3 ~ * h1, header ~ * header ~ * h3 ~ * h1, header ~ * h1 ~ * h1 ~ * h2, h1 ~ * header ~ * h1 ~ * h2, h1 ~ * h1 ~ * header ~ * h2, header ~ * header ~ * h1 ~ * h2, header ~ * h1 ~ * header ~ * h2, h1 ~ * header ~ * header ~ * h2, header ~ * header ~ * header ~ * h2, header ~ * h1 ~ * h1 ~ * h3, h1 ~ * header ~ * h1 ~ * h3, h1 ~ * h1 ~ * header ~ * h3, header ~ * header ~ * h1 ~ * h3, header ~ * h1 ~ * header ~ * h3, h1 ~ * header ~ * header ~ * h3, header ~ * header ~ * header ~ * h3 {
     margin: 1.2rem 0 0;
     padding: 0;
     font-size: 1rem;
@@ -53,6 +53,6 @@ h4, h5, h6, h3 ~ * h1, h3 ~ * h2, h3 ~ * h3, h2 ~ * h1 ~ * h1, h2 ~ * h2 ~ * h1,
     letter-spacing: normal;
 }
 
-h4::after, h5::after, h6::after, h3 ~ * h1::after, h3 ~ * h2::after, h3 ~ * h3::after, h2 ~ * h1 ~ * h1::after, h2 ~ * h2 ~ * h1::after, h2 ~ * h1 ~ * h2::after, h2 ~ * h2 ~ * h2::after, h2 ~ * h1 ~ * h3::after, h2 ~ * h2 ~ * h3::after, h1 ~ * h1 ~ * h1 ~ * h1::after, h1 ~ * h1 ~ * h2 ~ * h1::after, h1 ~ * h1 ~ * h3 ~ * h1::after, h1 ~ * h1 ~ * h1 ~ * h2::after, h1 ~ * h1 ~ * h1 ~ * h3::after {
+h4::after, h5::after, h6::after, h3 ~ * h1::after, h3 ~ * h2::after, h3 ~ * h3::after, h2 ~ * h1 ~ * h1::after, h2 ~ * header ~ * h1::after, h2 ~ * h2 ~ * h1::after, h2 ~ * h1 ~ * h2::after, h2 ~ * header ~ * h2::after, h2 ~ * h2 ~ * h2::after, h2 ~ * h1 ~ * h3::after, h2 ~ * header ~ * h3::after, h2 ~ * h2 ~ * h3::after, h1 ~ * h1 ~ * h1 ~ * h1::after, h1 ~ * h1 ~ * h2 ~ * h1::after, h1 ~ * h1 ~ * h3 ~ * h1::after, h1 ~ * h1 ~ * h1 ~ * h2::after, h1 ~ * h1 ~ * h1 ~ * h3::after, header ~ * h1 ~ * h1 ~ * h1::after, h1 ~ * header ~ * h1 ~ * h1::after, h1 ~ * h1 ~ * header ~ * h1::after, header ~ * header ~ * h1 ~ * h1::after, header ~ * h1 ~ * header ~ * h1::after, h1 ~ * header ~ * header ~ * h1::after, header ~ * header ~ * header ~ * h1::after, header ~ * h1 ~ * h2 ~ * h1::after, h1 ~ * header ~ * h2 ~ * h1::after, header ~ * header ~ * h2 ~ * h1::after, header ~ * h1 ~ * h3 ~ * h1::after, h1 ~ * header ~ * h3 ~ * h1::after, header ~ * header ~ * h3 ~ * h1::after, header ~ * h1 ~ * h1 ~ * h2::after, h1 ~ * header ~ * h1 ~ * h2::after, h1 ~ * h1 ~ * header ~ * h2::after, header ~ * header ~ * h1 ~ * h2::after, header ~ * h1 ~ * header ~ * h2::after, h1 ~ * header ~ * header ~ * h2::after, header ~ * header ~ * header ~ * h2::after, header ~ * h1 ~ * h1 ~ * h3::after, h1 ~ * header ~ * h1 ~ * h3::after, h1 ~ * h1 ~ * header ~ * h3::after, header ~ * header ~ * h1 ~ * h3::after, header ~ * h1 ~ * header ~ * h3::after, h1 ~ * header ~ * header ~ * h3::after, header ~ * header ~ * header ~ * h3::after {
     content: none;
 }
