@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*  BENJAM-STYLE EMBEDS  */
+
+figure, iframe, svg, video, {
+    display: block;
+    margin: auto;
+    border: none;
+    padding: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 100%;
+}
+
+iframe[src*="//youtube.com/embed/"], iframe[src*="//www.youtube.com/embed/"] {
+    width: 560px;
+    height: 315px;
+}
+
+img {
+    display: inline-block;
+    margin: .6rem .5rem;
+    padding: 0;
+    width: 6rem;
+    height: auto;
+}
+
+blockquote img, dt img, dd img, figcaption img, li img, nav img, p img, pre img {
+    display: inline-block;
+    margin: 0;
+    padding: 0 .1rem;
+    width: .8rem;
+    max-height: .8rem;
+    vertical-align: middle;
+}
+
+figure > img {
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 100%;
+}
+
+td > img:only-of-type, th > img:only-of-type {
+    display: block;
+    margin: auto;
+}

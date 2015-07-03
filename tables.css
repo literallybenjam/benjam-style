@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+/*  BENJAM-STYLE TABLES  */
+
+caption {
+    margin: 0;
+    padding: .3rem .25rem;
+}
+
+table {
+    margin: 1.2rem auto;
+    border-collapse: separate;
+    border-spacing: .125rem .15rem;
+    padding: 0;
+}
+
+td > table:only-child {
+    margin: auto;
+    width: 100%;
+}
+
+tbody + tbody::before {
+    display: table-row;
+    height: 1.2rem;
+    content: "";
+}
+
+td {
+    border: none;
+    border-radius: .125rem;
+    padding: .15rem .125rem;
+    vertical-align: top;
+}
+
+th {
+    border: none;
+    border-radius: .125rem;
+    padding: .15rem .125rem;
+    vertical-align: top;
+    text-decoration: underline;
+}

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/*  BENJAM-STYLE ROOT  */
+
+*:root {
+    line-height: 1.2;
+    text-align: justify;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    cursor: text;
+}
+
+*:root *[hidden] {
+    display: none;
+}

@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+/*  BENJAM-STYLE HEADINGS  */
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    font-weight: inherit;
+    text-align: center;
+    -moz-text-align-last: auto;
+    text-align-last: auto;
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+h2, h1 ~ * h1 {
+    margin: 1.2rem 0;
+    padding: 0;
+    font-size: 2rem;
+    font-weight: inherit;
+    text-align: left;
+    -moz-text-align-last: auto;
+    text-align-last: auto;
+    letter-spacing: .25rem;
+}
+
+h3, h2 ~ * h1, h2 ~ * h2, h1 ~ * h1 ~ * h1, h1 ~ * h1 ~ * h2 {
+    margin: 1.2rem 0 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+    -moz-text-align-last: auto;
+    text-align-last: auto;
+    text-decoration: underline;
+    letter-spacing: normal;
+}
+
+h3::after, h2 ~ * h1::after, h2 ~ * h2::after, h1 ~ * h1 ~ * h1::after, h1 ~ * h1 ~ * h2::after {
+    content: " : ";
+}
+
+h4, h5, h6, h3 ~ * h1, h3 ~ * h2, h3 ~ * h3, h2 ~ * h1 ~ * h1, h2 ~ * h2 ~ * h1, h2 ~ * h1 ~ * h2, h2 ~ * h2 ~ * h2, h2 ~ * h1 ~ * h3, h2 ~ * h2 ~ * h3, h1 ~ * h1 ~ * h1 ~ * h1, h1 ~ * h1 ~ * h2 ~ * h1, h1 ~ * h1 ~ * h3 ~ * h1, h1 ~ * h1 ~ * h1 ~ * h2, h1 ~ * h1 ~ * h1 ~ * h3 {
+    margin: 1.2rem 0 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: inherit;
+    text-align: center;
+    -moz-text-align-last: auto;
+    text-align-last: auto;
+    text-decoration: underline;
+    letter-spacing: normal;
+}
+
+h4::after, h5::after, h6::after, h3 ~ * h1::after, h3 ~ * h2::after, h3 ~ * h3::after, h2 ~ * h1 ~ * h1::after, h2 ~ * h2 ~ * h1::after, h2 ~ * h1 ~ * h2::after, h2 ~ * h2 ~ * h2::after, h2 ~ * h1 ~ * h3::after, h2 ~ * h2 ~ * h3::after, h1 ~ * h1 ~ * h1 ~ * h1::after, h1 ~ * h1 ~ * h2 ~ * h1::after, h1 ~ * h1 ~ * h3 ~ * h1::after, h1 ~ * h1 ~ * h1 ~ * h2::after, h1 ~ * h1 ~ * h1 ~ * h3::after {
+    content: none;
+}

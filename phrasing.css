@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/*  BENJAM-STYLE PHRASING  */
+
+*[title]:not([title=""]):not(a) {
+    border-bottom: dotted currentColor black;
+    cursor: help;
+}
+
+@supports (text-decoration-style: dotted) {
+    *[title]:not([title=""]):not(a) {
+        text-decoration-line: underline;
+        text-decoration-style: dotted;
+        border-bottom: none;
+    }
+}
+
+a[href] {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
+    text-decoration-style: dashed;
+    cursor: vertical-text;
+    transition: text-decoration-color .5s;
+}
+
+a[href]:hover {
+    text-decoration-color: transparent;
+}
+
+b {
+    font-style: inherit;
+    font-weight: bolder;
+}
+
+cite {
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+del {
+    text-decoration: line-through;
+    text-decoration-style: double;
+}
+
+dfn {
+    font-style: inherit;
+    font-weight: bolder;
+}
+
+ins {
+    text-decoration: underline;
+}
+
+s {
+    text-decoration: line-through;
+    text-decoration-style: single;
+}
+
+small {
+    font-size: .8rem;
+    line-height: inherit;
+}
+
+strong {
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+sub {
+    font-size: .8rem;
+    vertical-align: baseline;
+    line-height: .5;
+}
+
+sup {
+    font-size: .8rem;
+    vertical-align: super;
+    line-height: .5;
+    text-transform: uppercase;
+}
+
+u {
+    text-decoration: none;
+}
