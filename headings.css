@@ -22,7 +22,6 @@ h2, h1 ~ * h1, header ~ * h1 {
     text-align: left;
     -moz-text-align-last: auto;
     text-align-last: auto;
-    letter-spacing: .25rem;
 }
 
 h3, h1 ~ * h1 ~ h2, header ~ * h1 ~ h2, h1 ~ * header ~ h2, header ~ * header ~ h2, h2 ~ * h1, h2 ~ * h2, h1 ~ * h1 ~ * h1, h1 ~ * h1 ~ * h2, header ~ * h1 ~ * h1, h1 ~ * header ~ * h2, header ~ * header ~ * h1 {
