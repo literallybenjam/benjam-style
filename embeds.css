@@ -26,20 +26,21 @@ img {
     height: auto;
 }
 
+figure img {
+    display: block;
+    margin: auto;
+    width: auto;
+    max-width: 100%;
+}
+
 blockquote img, dt img, dd img, figcaption img, li img, nav img, p img, pre img {
     display: inline-block;
     margin: 0;
     padding: 0 .1rem;
     width: .8rem;
+    max-width: none;
     max-height: .8rem;
     vertical-align: middle;
-}
-
-figure > img {
-    display: block;
-    margin: auto;
-    width: auto;
-    max-width: 100%;
 }
 
 td > img:only-of-type, th > img:only-of-type {
