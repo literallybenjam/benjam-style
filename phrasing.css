@@ -20,7 +20,6 @@ a[href] {
     text-decoration: underline;
     text-decoration-color: currentColor;
     text-decoration-style: dashed;
-    cursor: vertical-text;
     transition: text-decoration-color .5s;
 }
 
